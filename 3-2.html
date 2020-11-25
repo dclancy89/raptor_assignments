@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Daniel Clancy SDEV Programs</title>
+        
+    </head>
+    <body>
+        <h1>Module 3 Question 2 - Programming Challenge 2 on page 177</h1>
+        <p>The manager of the Super Supermarket would like to be able to compute the unit price for products sold there. To do this,
+            the program should input the name and price of an item per pound and its weight in pounds and ounces. Then it should determine and 
+            display the unit price (the price per ounce) of that item and the total cost of the amount purchased. You will need the following variables:</p>
+        <ul class="variable">
+            <li>ItemName</li>
+            <li>Pounds</li>
+            <li>Ounces</li>
+            <li>PoundPrice</li>
+            <li>TotalPrice</li>
+            <li>UnitPrice</li>
+        </ul>
+
+        <p>You will need the following formulas:</p>
+        <ul class="formula">
+            <li>UnitPrice = PoundPrice / 16</li>
+            <li>TotalPrice = PoundPrice * (Pounds + Ounces / 16)</li>
+        </ul>
+
+        <h2>Program</h2>
+        <p>Input</p>
+        <div class="program">
+            <label for="itemName">Item Name</label>
+            <br />
+            <input type="text" id="itemName" />
+            
+            <br />
+            <br />
+
+            <label for="poundPrice">Price Per Pound</label>
+            <br />
+            $<input type="text" id="poundPrice" />/pound
+
+            <br />
+            <br />
+
+            <label for="pounds">Weight</label>
+            <br />
+            <input type="text" id="pounds" />
+            <label>lbs</label>
+            <br />
+            <input type="text" id="ounces" />
+            <label>oz</label>
+
+            <br />
+            <br />
+            <input type="submit" id="submit" value="Go!" />
+        </div>
+
+        <p>Output</p>
+        <div class="program">
+            <ul id="outputList">
+                <li>Item Name</li>
+                <li>Unit Price:</li>
+                <li>Total Cost:</li>
+            </ul>
+
+        </div>
+        <script src="js/3-2.js"></script>
+    </body>
+</html>
