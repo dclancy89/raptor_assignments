@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Daniel Clancy SDEV Programs</title>
+        <style>
+            #outputList li span {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="index.html">&lt; Back to Home</a></p>
+        <h1>Module 3 Question 3 - Programming Challenge 4 on page 178</h1>
+        <p>Shannon and Jasmin bowl as a team. Each of them bowls three games in a tournament. They would like to know their individual averages for their three games and the
+            team average. Allow the user to input the scores for each player. Output Shannon's average, Jasmine's average, and the team's average. You will need the following variables:
+        </p>
+        <ul class="variable">
+            <li>Score 1</li>
+            <li>Score 2</li>
+            <li>Score 3</li>
+            <li>avgJasmine</li>
+            <li>avgShannon</li>
+            <li>sumJasmine</li>
+            <li>sumShannon</li>
+            <li>teamAvg</li>
+        </ul>
+
+        <p>You will need the following formulas:</p>
+        <ul class="formula">
+            <li>teamAvg = (avgShannon + avgJasmine) / 2</li>
+        </ul>
+
+        <h2>Program</h2>
+        <p>Input</p>
+        <div class="program">
+            <label>Jasmine's Score</label>
+            <br />
+            <label for="jasmineScore1">Score 1</label>
+            <br />
+            <input type="text" id="jasmineScore1" />
+            <br />
+            <label for="jasmineScore2">Score 2</label>
+            <br />
+            <input type="text" id="jasmineScore2" />
+            <br />
+            <label for="jasmineScore3">Score 3</label>
+            <br />
+            <input type="text" id="jasmineScore3" />
+            
+            <br />
+            <br />
+
+            <label>Shannon's Scores</label>
+            <br />
+            <label for="shannonScore1">Score 1</label>
+            <br />
+            <input type="text" id="shannonScore1" />
+            <br />
+            <label for="shannonScore2">Score 2</label>
+            <br />
+            <input type="text" id="shannonScore2" />
+            <br />
+            <label for="shannonScore3">Score 3</label>
+            <br />
+            <input type="text" id="shannonScore3" />
+
+            <br />
+            <br />
+
+            <input type="submit" id="submit" value="Go!" />
+        </div>
+
+        <p>Output</p>
+        <div class="program">
+            <ul id="outputList">
+                <li><span>avgJasmine:</span></li>
+                <li><span>avgShannon:</span></li>
+                <li><span>teamAvg:</span></li>
+            </ul>
+
+        </div>
+        <script src="js/3-3.js"></script>
+    </body>
+</html>

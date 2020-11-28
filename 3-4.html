@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Daniel Clancy SDEV Programs</title>
+        <style>
+            #outputList li span {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="index.html">&lt; Back to Home</a></p>
+        <h1>Module 3 Question 4 - Programming Challenge 5 on page 178</h1>
+        <p>Kim wants to buy a car. Help kim compute the monthly pagement on a loan, given the loan amount, then annual percentage rate of interest, and
+            the number of monthly payments. The program should allow Kim to input the loan amount, interest rate, and how many payments she wants to make. It
+            should then compute and display the monthly payment. You will need the following variables:
+        </p>
+        <ul class="variable">
+            <li>Payment</li>
+            <li>LoanAmt</li>
+            <li>InterestRate</li>
+            <li>MonthlyRate</li>
+            <li>NumberMonths</li>
+        </ul>
+
+        <p>You will need the following formulas:</p>
+        <ul class="formula">
+            <li>MonthlyRate = InterestRate/1200</li>
+            <li>Payment = LoanAmt * MonthlyRate * (1 + MonthlyRate)^NumberMonths / ((1 + MonthlyRate)^NumberMonth - 1)</li>
+        </ul>
+
+        <h2>Program</h2>
+        <p>Input</p>
+        <div class="program">
+            <label for="LoanAmt">Loan Amount</label>
+            <br />
+            <input type="text" id="LoanAmt" />
+            <br />
+            <label for="InterestRate">Interest Rate</label>
+            <br />
+            <input type="text" id="InterestRate" />
+            <br />
+            <label for="NumberMonths">How many payments</label>
+            <br />
+            <input type="text" id="NumberMonths" />
+            
+            <br />
+            <br />
+
+        
+            <input type="submit" id="submit" value="Go!" />
+        </div>
+
+        <p>Output</p>
+        <div class="program">
+            <ul id="outputList">
+                <li><span>MonthlyRate:</span></li>
+                <li><span>Payment:</span></li>
+            </ul>
+
+        </div>
+        <script src="js/3-4.js"></script>
+    </body>
+</html>
