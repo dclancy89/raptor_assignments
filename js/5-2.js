@@ -1,6 +1,6 @@
 // Sum of squares
 // Daniel Clancy
-// v1.0 updated 11-29-20
+// v1.1 updated 11-29-20
 // Returns a sum of squares from 1 to n where
 // n in input by the user and must be positive
 
@@ -29,11 +29,16 @@ submit.addEventListener('click', function(e) {
 function validateInput() {
     let input = document.getElementById('ages').value;
     let arr = input.split(',');
-    arr.forEach((num) => {
-        if(num < 0) {
+
+    let negativeValue = false;
+
+    for(let i = 0; i < arr.length; i++) {
+        if(parseInt(arr[i]) < 0) {
+            let outputHTML = `<li class="error">You can only use positive ages</li>`;
+            document.getElementById('outputList').innerHTML = outputHTML;
             return false;
         }
-    });
+    }
 
     return true;
 }

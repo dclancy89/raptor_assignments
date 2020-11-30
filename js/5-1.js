@@ -29,7 +29,7 @@ submit.addEventListener('click', function(e) {
 function validateInput() {
     let input = parseInt(document.getElementById('MySquare').value);
     if (input < 0) {
-        document.getElementById('outputList').innerHTML = `<li>You must enter a positive integer</li>`;
+        document.getElementById('outputList').innerHTML = `<li class="error">You must enter a positive integer</li>`;
         return false;
     } else {
         return true;
