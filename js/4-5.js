@@ -66,7 +66,7 @@ function calculate(action) {
             operation = "-";
             break;
         case "prod":
-            answer = value2 * value2;
+            answer = value1 * value2;
             operation= "*";
             break;
         case "quot":

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Daniel Clancy SDEV Programs</title>
+        <style>
+            #outputList li span {
+                font-weight: bold;
+            }
+            .error {
+                color: crimson;
+            }
+
+            span.code {
+                background-color: rgba(115, 255, 197, 0.5);
+                color: #2f7357;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 14px;
+                padding: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="index.html">&lt; Back to Home</a></p>
+        <h1>Module 6 Question 2 - Programming Challenege 3 on Page 404</h1>
+        <p>For a list of numbers entered by the users, and terminated by a <span class="code">0</span>. Write a program to find the sum of the positive numbers 
+            and the sum of negative numbers.
+        </p>
+
+        <h2>Program</h2>
+        
+        <p>Input</p>
+        <div class="program">
+            <label for="numbers">Enter a list of comma separated numbers exclusing 0. (ex. 2,-3,4.5,-4.6,-2.3, 9)</label>
+            <input type="text" id="numbers">
+
+            <br/>
+
+            <input type="submit" id="submit" value="Go!" />
+        </div>
+
+        <p>Output</p>
+        <div class="program">
+            <ul id="outputList">
+
+            </ul>
+        </div>
+
+        
+        <script src="js/6-2.js"></script>
+    </body>
+</html>
