@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Daniel Clancy SDEV Programs</title>
+        <style>
+            #outputList li span {
+                font-weight: bold;
+            }
+            .error {
+                color: crimson;
+            }
+
+            span.code {
+                background-color: rgba(115, 255, 197, 0.5);
+                color: #2f7357;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 14px;
+                padding: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="index.html">&lt; Back to Home</a></p>
+        <h1>Module 7 Question 2 - Programming Challenege 2 on Page 463</h1>
+        <p> Create a program that allows the users to input a list of first names into one array and last names
+            into a parallel array. The output should be a list of email addresses where the address is of the following
+            form: <span class="code">first.last@mycollege.edu</span>
+        </p>
+
+        <h2>Program</h2>
+        
+        <p>Input</p>
+        <div class="program">
+            <label for="firstNames">Input a comma separated list of first names. (ex: Harry,Hermione,Ron,Ginny,Luna,Neville)</label>
+            <br />
+            <input type="text" id="firstNames">
+            <br />
+            <br />
+            <label for="lastNames">Input a comma separated list of last names. (ex: Potter,Granger,Weasley,Weasley,Lovegood,Longbottom)</label>
+            <br />
+            <input type="text" id="lastNames">
+            <br />
+            <input type="submit" id="submit" value="Go!" />
+        </div>
+
+        <p>Output</p>
+        <div class="program">
+            <ul id="outputList">
+
+            </ul>
+        </div>
+
+        
+        <script src="js/7-2.js"></script>
+    </body>
+</html>
